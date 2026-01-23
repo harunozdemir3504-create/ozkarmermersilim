@@ -480,12 +480,6 @@ html {
     }
 }
 
-/* Küçük Telefonlar İçin Ekstra Ayar (480px altı) */
-@media (max-width: 480px) {
-    .menu {
-        flex-direction: column; /* Çok küçük ekranlarda butonları tamamen alt alta dizer */
-        width: 100%;
-    }
 
     .menu li, .menu a {
         width: 100%;
@@ -496,7 +490,7 @@ html {
         display: block;
         width: 100%;
     }
-}
+
 
 
 /* --- ÖZKAR MERMER LOGO VE MENÜ DÜZENLEMESİ --- */
