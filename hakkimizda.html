@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımızda - Özkar Mermer</title>
     <link rel="stylesheet" href="style.css">
+        <style>
+    /* --- ÖZKAR MERMER LOGO VE MENÜ DÜZENLEMESİ --- */
+
+/* Bilgisayar görünümü için logo ve menü */
+.navbar {
+    flex-direction: row !important; /* Logo ve menüyü yan yana tutar */
+    justify-content: space-between;
+}
+
+.logo { 
+    font-size: 36px !important; /* Logoyu belirgin şekilde büyüttük */
+    font-weight: 800;
+    color: #ffffff; 
+    flex-shrink: 0; /* Logonun küçülmesini engeller */
+}
+
+.menu { 
+    display: flex !important;
+    flex-direction: row !important; /* Butonları yan yana tutar */
+    gap: 20px;
+    margin-left: auto;
+}
+
+/* Telefon görünümü için ince ayar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column !important; /* Mobilde logo üstte, menü altta kalsın */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 32px !important; /* Mobilde de büyük ama ekrana sığacak boyutta */
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        width: 100%;
+        gap: 10px; /* Butonlar arası boşluk */
+    }
+
+    .menu a {
+        font-size: 14px; /* Buton yazılarını bir tık küçülttük ki yan yana sığsınlar */
+    }
+}
+</style>
 </head>
 <body>
 
@@ -51,9 +98,6 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 | ORHAN SOYDOĞAN - HARUN ÖZDEMİR</p>
-    </footer>
-
+   
 </body>
 </html>
