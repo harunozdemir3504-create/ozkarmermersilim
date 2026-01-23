@@ -422,23 +422,7 @@ html {
 }
 
 
-/* --- MOBİL UYUMLULUK DÜZENLEMELERİ --- */
 
-@media (max-width: 768px) {
-    /* 1. Navigasyon Çubuğu (Üst Menü) Düzenlemesi */
-    .navbar {
-        flex-direction: column; /* Logo ve menüyü alt alta getirir */
-        padding: 15px 20px;
-        gap: 15px;
-    }
-
-    .menu {
-        flex-direction: row; /* Butonları yan yana tutmaya çalışır */
-        flex-wrap: wrap;    /* Sığmazsa alt satıra geçer */
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
-    }
 
     .menu a {
         font-size: 14px;
@@ -449,14 +433,10 @@ html {
     .hero h1 {
         font-size: 28px; /* Yazı boyutunu telefona göre küçültür */
         padding: 0 10px;
-    }
+    
 
-    /* 3. Hakkımızda ve İletişim Bölümleri */
-    .hakkimizda-icerik, 
-    .iletisim-konteynir {
-        flex-direction: column; /* Yan yana olan kısımları alt alta getirir */
-        gap: 30px;
-    }
+   
+    
 
     .hakkimizda-metin h2, 
     .iletisim-baslik h2 {
@@ -472,12 +452,7 @@ html {
     .cerceve img {
         width: 100%;
         height: auto;
-    }
-
-    /* 5. Özellikler Listesi (Izgara Yapısı) */
-    .ozellikler-listesi {
-        grid-template-columns: 1fr; /* Özellikleri tek sütun yapar */
-    }
+  
 }
 
 
@@ -537,4 +512,5 @@ html {
     .menu a {
         font-size: 14px; /* Buton yazılarını bir tık küçülttük ki yan yana sığsınlar */
     }
+
 }
