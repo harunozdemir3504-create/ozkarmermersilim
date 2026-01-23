@@ -1,0 +1,353 @@
+<h1>SITE AÇILDI</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özkar Mermer | Premium Doğal Taşlar</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* Özkar Mermer Özel Tasarım */
+    .ozkar-silim-container {
+        background: #ffffff;
+        padding: 60px 25px;
+        max-width: 1000px;
+        margin: 40px auto;
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        border-top: 5px solid #1a1a1a;
+    }
+
+    .ozkar-logo-baslik {
+        font-family: 'Times New Roman', serif;
+        color: #1a1a1a;
+        font-size: 2.8rem;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 4px;
+    }
+
+    .hizmet-alt-baslik {
+        color: #b08d57;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 5px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .ozkar-ayrac {
+        width: 120px;
+        height: 2px;
+        background: linear-gradient(to right, transparent, #b08d57, transparent);
+        margin: 20px auto 40px;
+    }
+
+    .ozkar-metin-alani p {
+        text-align: center;
+        color: #555;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
+
+    .ozkar-ozellikler {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .ozkar-madde {
+        background: #fdfdfd;
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid #f0f0f0;
+        display: flex;
+        align-items: flex-start;
+        transition: 0.3s;
+    }
+
+    .ozkar-madde:hover {
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(176, 141, 87, 0.15);
+        border-color: #b08d57;
+    }
+
+    .ozkar-ikon {
+        font-size: 1.8rem;
+        margin-right: 15px;
+    }
+
+    .ozkar-madde-metin {
+        color: #444;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .ozkar-madde-metin strong {
+        display: block;
+        color: #1a1a1a;
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+    }
+
+    .ozkar-slogan {
+        text-align: center;
+        font-size: 1.3rem;
+        font-style: italic;
+        color: #b08d57;
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid #eee;
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .ozkar-logo-baslik { font-size: 2rem; }
+    }
+</style>
+<style>
+    /* Tehlike Bilgi Bölümü CSS */
+    .tehlike-bilgi-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 40px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        font-family: Arial, sans-serif;
+    }
+
+    .tehlike-baslik-alani {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .tehlike-baslik {
+        font-size: 2.3rem;
+        color: #b08d57; /* Özkar Mermer'in altın rengi */
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .tehlike-ayrac {
+        width: 100px;
+        height: 3px;
+        background: #1a1a1a;
+        margin: 0 auto 20px;
+    }
+
+    .tehlike-giris {
+        font-size: 1.15rem;
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .tehlike-icerik-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        gap: 30px;
+    }
+
+    .tehlike-madde {
+        background: #f9f9f9;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        border-left: 5px solid #b08d57;
+    }
+
+    .madde-baslik {
+        font-size: 1.6rem;
+        color: #1a1a1a;
+        margin-top: 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .tehlike-madde p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .tehlike-madde p strong {
+        color: #1a1a1a;
+    }
+
+    .resim-yerlesimi {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .resim-yerlesimi img {
+        width: 100%;
+        max-width: 450px; /* Görselin maksimum genişliği */
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .resim-aciklama {
+        font-size: 0.9rem;
+        color: #888;
+        margin-top: 10px;
+        font-style: italic;
+    }
+
+    .tehlike-son-cagri {
+        text-align: center;
+        font-size: 1.25rem;
+        color: #1a1a1a;
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px dashed #ddd;
+        font-weight: 600;
+    }
+
+    .tehlike-son-cagri strong {
+        color: #b08d57;
+    }
+
+    /* Mobil Uyumluluk */
+    @media (max-width: 768px) {
+        .tehlike-baslik {
+            font-size: 1.8rem;
+        }
+        .tehlike-icerik-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body class="koyu-tema">
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">ÖZKAR<span>MERMER</span></a>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Anasayfa</a></li>
+            <li><a href="koleksiyon.html">Koleksiyon</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="btn-iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-yazi">
+            <span class="ust-etiket">Eşsiz Tasarımlar</span>
+            <h1>Evinize Doğal Bir Dokunuş</h1>
+            <p>1. Sınıf işçilik ve kaliteli taşın buluşma noktası.</p>
+            <a href="#koleksiyon" class="btn-hero">Koleksiyonu Keşfet</a>
+        </div>
+    </header>
+
+    <section id="koleksiyon" class="urunler">
+        <div class="baslik-alani">
+            <h2>Özel Koleksiyonumuz</h2>
+            <div class="alt-cizgi"></div>
+        </div>
+        
+        <div class="galeri">
+            <div class="kart">
+                <div class="resim-alani">
+                    <img src="traven.jpg" alt="Dolgulu ve Cilalı Traverten">
+                </div>
+                <h3>Dolgulu ve Cilalı Traverten</h3>
+                <p>Travertenin doğal zarafetini, pürüzsüz ve cam gibi bir yüzeyle buluşturuyoruz.</p>
+            </div>
+
+            <div class="kart">
+                <div class="resim-alani">
+                    <img src="reno.jpg" alt="Nero Marquina">
+                </div>
+                <h3>Nero Marquina</h3>
+                <p>Koyu tonların asaleti.</p>
+            </div>
+
+            <div class="kart">
+                <div class="resim-alani">
+                    <img src="karma.jpg" alt="Lüks Doğal Taş Kaplamalar">
+                </div>
+                <h3>Lüks Doğal Taş Kaplamalar</h3>
+                <p>tüm doğal yüzeylerde cam gibi şeffaf bir parlaklık.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+<div class="ozkar-silim-container">
+    <div class="ozkar-icerik">
+        <h1 class="ozkar-logo-baslik">ÖZKAR MERMER</h1>
+        <h2 class="hizmet-alt-baslik">Profesyonel Yüzey Silim ve Restorasyon</h2>
+        <div class="ozkar-ayrac"></div>
+        
+        <div class="ozkar-metin-alani">
+            <p><strong>Zeminlerinize Değer Katıyoruz:</strong> Özkar Mermer olarak, matlaşmış ve canlılığını yitirmiş doğal taşlarınızı modern italyan teknolojisi ve ustalıkla yeniden hayata döndürüyoruz.</p>
+            
+            <div class="ozkar-ozellikler">
+                <div class="ozkar-madde">
+                    <span class="ozkar-ikon">💎</span>
+                    <div class="ozkar-madde-metin">
+                        <strong>Kusursuz Silim:</strong> İtalyan makineler ve elmas pedler kullanarak yüzeydeki çizikleri ve pürüzleri moleküler düzeyde yok ediyoruz.
+                    </div>
+                </div>
+                <div class="ozkar-madde">
+                    <span class="ozkar-ikon">✨</span>
+                    <div class="ozkar-madde-metin">
+                        <strong>Kristalize Cila:</strong> Mermerin kendi doğal ışıltısını ortaya çıkaran, uzun ömürlü ve cam parlaklığında yüzeyler sunuyoruz.
+                    </div>
+                </div>
+                <div class="ozkar-madde">
+                    <span class="ozkar-ikon">🛡️</span>
+                    <div class="ozkar-madde-metin">
+                        <strong>Tam Koruma:</strong> Uygulama sonrası özel koruyucu kalkanlar ile taşınızı sıvı emilimine ve lekelere karşı dirençli kılıyoruz.
+                    </div>
+                </div>
+            </div>
+
+            <div class="ozkar-slogan">
+                "Mermerin doğal ruhu, Özkar Mermer'in profesyonel dokunuşuyla parlar."
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tehlike-bilgi-container">
+    <div class="tehlike-baslik-alani">
+        <h2 class="tehlike-baslik">Mermer Temizliğinde Uzman Eller Neden Gerekli?</h2>
+        <div class="tehlike-ayrac"></div>
+        <p class="tehlike-giris">Ev tipi temizleyicilerin cazibesine kapılmak, mermer zeminleriniz için geri dönüşü olmayan hasarlara yol açabilir. Profesyonel dokunuşun önemi burada başlar.</p>
+    </div>
+
+    <div class="tehlike-icerik-grid">
+        <div class="tehlike-madde">
+            <h3 class="madde-baslik">Yanlış Ürünlerin Tahribatı</h3>
+            <p>Market raflarındaki çoğu genel temizlik ürünü, mermerin hassas kalsiyum karbonat yapısını aşındıran asitler (limon, sirke) veya güçlü kimyasallar içerir. Bu ürünler anlık temizlik hissi verse de, uzun vadede mermer yüzeyinizde matlaşmaya, renk değişimine ve kalıcı lekelere neden olur.</p>
+            <p><strong>Özkar Mermer</strong> olarak, taşınızın türüne uygun pH dengeli ve özel formüle edilmiş ürünler kullanırız. Bu, mermerinize zarar vermeden, derinlemesine temizlik ve parlaklık sağlarız.</p>
+            <div class="resim-yerlesimi">
+                <img src="yanik.jpg" alt="Yanlış ürünlerle aşınmış mermer">
+                <p class="resim-aciklama">Yanlış kimyasallar sonucu matlaşmış ve delik delik olmuş bir mermer yüzeyi.</p>
+            </div>
+        </div>
+
+        <div class="tehlike-madde">
+            <h3 class="madde-baslik">Aşındırıcı Uygulamaların Riskleri</h3>
+            <p>Mermer yüzeyindeki çizik veya inatçı lekeleri gidermek için zımpara kağıdı, sert fırçalar veya amatör parlatma makineleri kullanmak, mermerin koruyucu tabakasını tamamen yok edebilir. Bu tür aşındırıcı uygulamalar, yüzeyde derin çiziklere, doku kaybına ve geri dönülmez hasarlara yol açar.</p>
+            <p>Özkar Mermer'in profesyonel silim ekipmanları ve tecrübeli ekibi, her aşamada mermerinizin doğal dokusunu koruyarak, kademeli ve kontrollü bir silim işlemi uygular. Bu sayede taşınızın ömrü uzar ve ilk günkü estetiğine kavuşur.</p>
+            <div class="resim-yerlesimi">
+                <img src="cizik.jpg" alt="Aşındırıcı uygulamayla çizilmiş mermer">
+                <p class="resim-aciklama">Amatör uygulamalar sonrası yüzeyde oluşan derin çizikler ve doku kayıpları.</p>
+            </div>
+        </div>
+    </div>
+    <p class="tehlike-son-cagri">Mermeriniz değerlidir ve özel ilgi gerektirir. Riski değil, kaliteyi tercih edin. <strong>Özkar Mermer</strong> ile iletişime geçerek, taşlarınıza hak ettiği profesyonel bakımı sağlayın.</p>
+</div>
+</body>
+</html>

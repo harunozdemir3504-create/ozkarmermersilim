@@ -1,0 +1,422 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+ 
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+ 
+.logo { font-size: 24px; font-weight: bold; text-decoration: none; color: #333; }
+.logo span { color: #3737d4; }
+ 
+.menu { list-style: none; display: flex; gap: 20px; align-items: center; }
+.menu a { text-decoration: none; color: #555; font-weight: 500; transition: 0.3s; }
+.menu a:hover { color: #d4af37; }
+ 
+ 
+.btn-iletisim {
+    background-color: #333; color: white !important;
+    padding: 8px 20px; border-radius: 5px;
+}
+ 
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images.jpg');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; color: white;
+}
+ 
+ 
+.hero h1 { font-size: 48px; margin-bottom: 10px; }
+.btn-hero {
+    display: inline-block; margin-top: 20px; padding: 12px 30px;
+    background-color: #d4af37; color: white; text-decoration: none;
+    border-radius: 5px; font-weight: bold; transition: 0.3s;
+}
+.btn-hero:hover { background-color: #b59021; transform: scale(1.05); }
+ 
+ 
+.urunler { padding: 50px 20px; text-align: center; }
+.urunler h2 { margin-bottom: 30px; font-size: 32px; color: #444; }
+ 
+.galeri {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;
+}
+ 
+.kart {
+    background: rgb(255, 255, 255); width: 300px;
+    border-radius: 10px; overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+ 
+ 
+.kart:hover { transform: translateY(-10px); }
+ 
+.resim-alani img { width: 100%; height: 200px; object-fit: cover; }
+ 
+.kart h3 { margin: 15px 0 5px; color: #222; }
+.kart p { padding: 0 15px 20px; color: #666; font-size: 14px; }
+ 
+footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
+/* Genel Koyu Tema Ayarları */
+body {
+    background-color: #0a0a0a; /* Çok koyu gri/siyah */
+    color: #ffffff;
+}
+
+/* Hakkımızda Bölümü ve Arka Plan Fotoğrafı */
+.hakkimizda-bolumu {
+    padding: 100px 10%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    /* Buradaki 'mermer-arka.jpg' yerine kendi arka plan resmini yaz */
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('mermer-arka.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Paralaks efekti */
+}
+
+.hakkimizda-icerik {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Metin Tasarımı */
+.hakkimizda-metin {
+    flex: 1;
+}
+
+.ust-baslik {
+    color: #a38655;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.hakkimizda-metin h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.cizgi {
+    width: 80px;
+    height: 4px;
+    background: #a38655;
+    margin-bottom: 25px;
+}
+
+.hakkimizda-metin p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Özellik Kartları (Ekran görüntündeki gibi) */
+.ozellikler-listesi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.ozellik-kart {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(163, 134, 85, 0.3);
+    transition: 0.3s;
+}
+
+.ozellik-kart:hover {
+    background: rgba(163, 134, 85, 0.15);
+    transform: translateY(-5px);
+}
+
+.ozellik-kart .ikon {
+    color: #a38655;
+    font-weight: bold;
+}
+
+/* Görsel Tasarımı */
+.hakkimizda-gorsel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cerceve {
+    position: relative;
+    padding: 15px;
+    border: 2px solid #a38655;
+    border-radius: 20px;
+}
+
+.cerceve img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: block;
+    filter: grayscale(30%); /* Hafif siyah-beyaz efekti lüks durur */
+}
+
+/* Footer Düzenlemesi */
+footer {
+    background: #000;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+footer p {
+    color: #a38655;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Aktif Sayfa Belirteci */
+.active-link {
+    color: #a38655 !important;
+    border-bottom: 2px solid #a38655;
+}
+
+/* Anasayfa Koyu Tema Düzenlemeleri */
+.urunler {
+    background-color: #0a0a0a; /* Koyu arka plan */
+    padding: 80px 10%;
+    color: white;
+}
+
+.baslik-alani {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.baslik-alani h2 {
+    font-size: 2.5rem;
+    color: #a38655; /* Altın sarısı başlık */
+}
+
+.alt-cizgi {
+    width: 70px;
+    height: 3px;
+    background: #a38655;
+    margin: 15px auto;
+}
+
+/* Ürün Kartları Değişimi */
+.kart {
+    background: #111; /* Koyu kart zemin */
+    border: 1px solid #222;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.kart:hover {
+    border-color: #a38655;
+    transform: translateY(-10px);
+}
+
+.kart h3 {
+    color: #a38655;
+    margin-top: 15px;
+}
+
+.kart p {
+    color: #ccc;
+    padding: 10px 15px 20px;
+}
+
+/* Hero Alanı Arka Planı İçin */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('pexels.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* İletişim Sayfası Tasarımı */
+.iletisim-bolumu {
+    padding: 100px 10%;
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('arkaplan.jpg'); /* Resim adını kontrol et */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.iletisim-baslik {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ust-yazi {
+    color: #a38655;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.iletisim-baslik h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.alt-cizgi {
+    width: 60px;
+    height: 3px;
+    background: #a38655;
+    margin: 0 auto;
+}
+
+.iletisim-konteynir {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* İletişim Kartları */
+.iletisim-bilgi-taraf {
+    flex: 1;
+}
+
+.iletisim-kart {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(163, 134, 85, 0.1);
+    transition: 0.3s;
+}
+
+.iletisim-kart:hover {
+    border-color: #a38655;
+    transform: translateX(10px);
+    background: rgba(163, 134, 85, 0.1);
+}
+
+.kart-ikon {
+    font-size: 1.8rem;
+    background: #a38655;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.kart-yazi h4 {
+    color: #a38655;
+    margin-bottom: 5px;
+}
+
+/* Form Alanı */
+.iletisim-form-taraf {
+    flex: 1.5;
+    background: #111;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #222;
+}
+
+.form-grup {
+    margin-bottom: 20px;
+}
+
+.form-grup label {
+    display: block;
+    color: #a38655;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-grup input, .form-grup textarea {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-grup input:focus, .form-grup textarea:focus {
+    border-color: #a38655;
+}
+
+.gonder-butonu {
+    width: 100%;
+    padding: 15px;
+    background: #a38655;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gonder-butonu:hover {
+    background: #866d44;
+}
+
+.active-sayfa {
+    background: #866d44 !important;
+}
+
+@media (max-width: 968px) {
+    .iletisim-konteynir {
+        flex-direction: column;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-icerik {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+.kapat {
+  position: absolute;
+  top: 15px; right: 35px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
