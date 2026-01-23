@@ -420,3 +420,80 @@ html {
   font-size: 40px;
   cursor: pointer;
 }
+
+
+/* --- MOBİL UYUMLULUK DÜZENLEMELERİ --- */
+
+@media (max-width: 768px) {
+    /* 1. Navigasyon Çubuğu (Üst Menü) Düzenlemesi */
+    .navbar {
+        flex-direction: column; /* Logo ve menüyü alt alta getirir */
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: row; /* Butonları yan yana tutmaya çalışır */
+        flex-wrap: wrap;    /* Sığmazsa alt satıra geçer */
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* 2. Hero Alanı (Giriş Yazıları) */
+    .hero h1 {
+        font-size: 28px; /* Yazı boyutunu telefona göre küçültür */
+        padding: 0 10px;
+    }
+
+    /* 3. Hakkımızda ve İletişim Bölümleri */
+    .hakkimizda-icerik, 
+    .iletisim-konteynir {
+        flex-direction: column; /* Yan yana olan kısımları alt alta getirir */
+        gap: 30px;
+    }
+
+    .hakkimizda-metin h2, 
+    .iletisim-baslik h2 {
+        font-size: 2rem;
+    }
+
+    /* 4. Resim ve Kart Ayarları */
+    .kart {
+        width: 100%; /* Kartların ekranı tam kaplamasını sağlar */
+        max-width: 350px;
+    }
+
+    .cerceve img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 5. Özellikler Listesi (Izgara Yapısı) */
+    .ozellikler-listesi {
+        grid-template-columns: 1fr; /* Özellikleri tek sütun yapar */
+    }
+}
+
+/* Küçük Telefonlar İçin Ekstra Ayar (480px altı) */
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column; /* Çok küçük ekranlarda butonları tamamen alt alta dizer */
+        width: 100%;
+    }
+
+    .menu li, .menu a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-iletisim {
+        display: block;
+        width: 100%;
+    }
+}
