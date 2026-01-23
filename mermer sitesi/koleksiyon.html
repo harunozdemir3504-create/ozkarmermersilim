@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özdemir Mermer Koleksiyon</title>
+    <style>
+        /* Genel Sıfırlama */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Daha iyi görünüm için 'Inter' veya 'Poppins' kullanabilirsin */
+}
+
+/* Header Alanı */
+.navbar {
+    
+    display: flex;
+    justify-content: space-between; /* Logo sola, menü sağa */
+    align-items: center;
+    padding: 15px 5%;
+    color: white;
+}
+
+/* Logo Stili */
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.logo-ozkar {
+    color: #4a5dff; /* Görseldeki mavi tonu */
+}
+
+.logo-mermer {
+    color: #030202;
+}
+
+/* Navigasyon Linkleri */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Butonlar arası boşluk */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #050404; /* Pasif yazı rengi */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Mouse ile üzerine gelince veya Aktif sayfa */
+.nav-links li a:hover, .nav-links li a.active {
+    color: #e5c37e; /* Görseldeki altın/kahverengi tonu */
+}
+
+/* İletişim Butonu (Kutucuklu yapı) */
+.contact-btn {
+    background-color: #1a1a1a; /* Koyu gri/siyah kutu */
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white !important;
+}
+
+.contact-btn:hover {
+    background-color: #000000;
+}
+        /* GENEL TASARIM */
+        body { font-family: sans-serif; background: hsl(0, 10%, 94%); margin: 0; padding: 20px; }
+        .urunler { max-width: 1200px; margin: 0 auto; text-align: center; }
+        .baslik-alani h2 { color: #212196; text-transform: uppercase; }
+        .alt-cizgi { width: 60px; height: 4px; background: #b08d57; margin: 10px auto 40px; }
+
+        /* GALERİ KARTLARI */
+        .galeri { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .kart { background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .resim-alani img { 
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            cursor: pointer; /* Tıklanabilir olduğunu gösterir */
+            transition: 0.3s; 
+            border-radius: 4px;
+        }
+        .resim-alani img:hover { opacity: 0.8; }
+
+        /* MODAL (BÜYÜTME EKRANI) AYARLARI */
+        .modal {
+            display: none; /* Sayfa açıldığında gizli */
+            position: fixed;
+            z-index: 9999;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(239, 233, 233, 0.9); /* Arka planı karartır */
+        }
+        .modal-icerik {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 85vh; /* Ekranın %85'inden büyük olmasın */
+            margin-top: 50px;
+            border: 3px solid #fff;
+            border-radius: 5px;
+        }
+        .kapat {
+            position: absolute;
+            top: 15px; right: 35px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-ozkar">ÖZKAR</span><span class="logo-mermer">MERMER</span>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="koleksiyon.html">Koleksiyon</a></li>
+            <li><a href="hakkimizda.html" class="active">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="contact-btn">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+    <section id="koleksiyon" class="urunler">
+        <div class="baslik-alani">
+            <h2>Özel Koleksiyonumuz</h2>
+            <div class="alt-cizgi"></div>
+        </div>
+        
+        <div class="galeri">
+            <div class="kart">
+                <div class="resim-alani">
+                    <img src="traven.jpg" alt="Dolgulu ve Cilalı Traverten">
+                </div>
+                <h3>Dolgulu ve Cilalı Traverten</h3>
+                <p>Travertenin doğal zarafetini, pürüzsüz ve cam gibi bir yüzeyle buluşturuyoruz.</p>
+            </div>
+
+            <div class="kart">
+                <div class="resim-alani">
+                    <img src="reno.jpg" alt="Nero Marquina">
+                </div>
+                <h3>Nero Marquina</h3>
+                <p>Koyu tonların asaleti.</p>
+            </div>
+
+            <div class="kart">
+                <div class="resim-alani">
+                    <img src="karma.jpg" alt="Lüks Doğal Taş Kaplamalar">
+                </div>
+                <h3>Lüks Doğal Taş Kaplamalar</h3>
+                <p>Tüm doğal yüzeylerde cam gibi şeffaf bir parlaklık.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="resimModal" class="modal">
+        <span class="kapat">&times;</span>
+        <img class="modal-icerik" id="buyukResim">
+    </div>
+
+    <script>
+        // Modal elemanlarını seçiyoruz
+        var modal = document.getElementById("resimModal");
+        var modalImg = document.getElementById("buyukResim");
+        var kapatButonu = document.getElementsByClassName("kapat")[0];
+
+        // Sayfadaki tüm resimleri buluyoruz
+        var resimler = document.querySelectorAll(".resim-alani img");
+
+        // Her resme tıklandığında çalışacak fonksiyon
+        resimler.forEach(function(img) {
+            img.onclick = function(){
+                modal.style.display = "block"; // Modalı göster
+                modalImg.src = this.src; // Tıklanan resmin adresini büyük kutuya kopyala
+            }
+        });
+
+        // Kapat (X) butonuna tıklandığında modalı gizle
+        kapatButonu.onclick = function() { 
+            modal.style.display = "none";
+        }
+
+        // Resmin dışındaki siyah alana tıklandığında da kapansın
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
